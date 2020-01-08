@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.craterdog.java-security-framework:java-secure-messaging-api:3.21">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/craterdog/java-security-framework/java-secure-messaging-api/3.21/java-secure-messaging-api-3.21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/craterdog/java-security-framework/java-secure-messaging-api/3.21/java-secure-messaging-api-3.21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/craterdog/java-security-framework/java-secure-messaging-api/3.21/java-secure-messaging-api-3.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

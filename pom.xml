@@ -7,5 +7,15 @@
     <groupId>CryptographyExample</groupId>
     <artifactId>CryptographyExample</artifactId>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
+=======
+    <dependencies>
+        <dependency>
+            <groupId>com.craterdog.java-security-framework</groupId>
+            <artifactId>java-secure-messaging-api</artifactId>  <!-- or whichever submodule you need -->
+            <version>3.21</version>
+        </dependency>
+    </dependencies>
+>>>>>>> imported dependencies
 
 </project>
