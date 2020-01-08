@@ -23,7 +23,12 @@ public class SymmetricKeySchemeTest {
         DecryptAlgorithm decryptAlgorithm = new DecryptAlgorithm();
         byte[] messageReceived = decryptAlgorithm.Decrypt(message,key);
         String encodedMessage = new String(messageReceived);
-        System.out.println("The message sent from Alice to Bob is: "+encodedMessage);
+
+        //Proof
+        System.out.println("The message sent from Alice to Bob is: "+encodedMessage+"\n");
+        System.out.println("Plain Text Before Encryption:"+ new String(plainTextByte));
+        System.out.println("Encrypted Text After Encryption:"+ new String(message));
+        System.out.println("Decrypted Text After Decryption:"+ encodedMessage+"\n");
 
         System.out.println("The Alice's message is equal to the message received from Bob? "+
                                 decryptAlgorithm.compareTwoMessage(plainText,encodedMessage));
