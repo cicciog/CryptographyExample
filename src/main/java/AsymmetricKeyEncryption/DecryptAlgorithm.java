@@ -1,40 +1,37 @@
 package AsymmetricKeyEncryption;
 
 import javax.crypto.Cipher;
+import java.nio.charset.StandardCharsets;
 import java.security.PrivateKey;
 
 public class DecryptAlgorithm {
-    Cipher cipher;
+    private Cipher cipher;
     final String algorithm = "RSA/ECB/PKCS1Padding";
-    PrivateKey receiverPrivateKey;
-    byte[] message;
+    private PrivateKey privatekey;
+    private byte[] input;
 
     //Construct
-    public DecryptAlgorithm(PrivateKey pReceiverPrivateKey){
-        try{
-            cipher = Cipher.getInstance(algorithm);
-            //Initializing a Cipher object
-            cipher.init(Cipher.ENCRYPT_MODE, pReceiverPrivateKey);
-        }catch(Exception e){
-            System.out.println(e.getMessage());
-        }
+    public DecryptAlgorithm(PrivateKey pPrivateKey, String ciphertext) throws Exception{
 
+        //Creating a Cipher object
+        cipher = Cipher.getInstance(algorithm);
+
+        //retrieve public key
+        privatekey = pPrivateKey;
+
+        //get input message
+        input = ciphertext.getBytes();
 
     }
 
     //Dencrypt Data
-    public byte[] getDecryptedData(byte[] pCiphertext){
-        byte[] plaintext = null;
-        //compute cipherText
-        if(pCiphertext != null){
-            try{
-               plaintext = cipher.doFinal();
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-            }
-            return plaintext;
-        }else{
-            throw new NullPointerException();
-        }
+    public byte[] doDecryptedData() throws Exception{
+
+        //Initializing a Cipher object
+        cipher.init(Cipher.DECRYPT_MODE,privatekey);
+        //dencrypting the data
+        byte[] plainText = cipher.doFinal(input);
+        String text = new String(plainText, StandardCharsets.UTF_8);
+        return plainText;
     }
 }

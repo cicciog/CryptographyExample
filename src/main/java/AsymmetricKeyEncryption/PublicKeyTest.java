@@ -17,6 +17,7 @@ public class PublicKeyTest {
         PublicKey publickey = null;
         PrivateKey privatekey = null;
         EncryptAlgorithm encryptAlgorithm = null;
+        DecryptAlgorithm decryptAlgorithm = null;
 
         try{
             kgen = new Kgen();
@@ -35,8 +36,9 @@ public class PublicKeyTest {
 
         System.out.println("*********** ENCRYPTION ***********");
 
-        encryptAlgorithm = new EncryptAlgorithm(publickey,"oggi sono in biblioteca");
-        System.out.println( new String(encryptAlgorithm.doEncryptedData(), "UTF8"));
+        encryptAlgorithm = new EncryptAlgorithm(publickey,"Hey there, how are you?");
+        String ciphertext = new String(encryptAlgorithm.doEncryptedData(),"UTF-8");
+        System.out.println(ciphertext);
 
 
 
@@ -45,12 +47,8 @@ public class PublicKeyTest {
          *********************************************************/
         System.out.println("*********** DENCRYPTION ***********");
 
-        //Initializing the same cipher for decryption
-        //cipher.init(Cipher.DECRYPT_MODE, privatekey);
-
-        //Decrypting the text
-        //byte[] decipheredText = cipher.doFinal(cipherText);
-        //System.out.println(new String(decipheredText));
+        decryptAlgorithm = new DecryptAlgorithm(privatekey,ciphertext);
+        System.out.println(decryptAlgorithm.doDecryptedData());
 
     }
 }
