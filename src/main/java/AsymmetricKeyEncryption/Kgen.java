@@ -6,11 +6,8 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 
 public class Kgen {
+
     private KeyPairGenerator keyPairGen;
-    //Getting the public key from the key pair
-    private PublicKey publicKey;
-    //Getting the private key from the key pair
-    private PrivateKey privateKey;
     //Keypair sk,pk
     private KeyPair pair;
 
@@ -20,20 +17,18 @@ public class Kgen {
         //Initializing the KeyPairGenerator, key size
         keyPairGen.initialize(2048);
         //Generate the pair of keys
-        pair = keyPairGen.generateKeyPair();
+        this.pair = keyPairGen.generateKeyPair();
     }
 
+    //Getting the public key from the key pair
     public PublicKey getPublicKey(){
-        publicKey = pair.getPublic();
-        System.out.println("PubKey: "+publicKey);
-        return publicKey;
+        return pair.getPublic();
+    }
+    //Getting the private key from the key pair
+    public PrivateKey getPrivateKey(){
+        return pair.getPrivate();
     }
 
-    public PrivateKey getPrivateKey(){
-        privateKey = pair.getPrivate();
-        System.out.println("PrivKey: "+privateKey);
-        return privateKey;
-    }
 
 
 }

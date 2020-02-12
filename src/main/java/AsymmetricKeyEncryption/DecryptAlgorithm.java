@@ -1,37 +1,51 @@
 package AsymmetricKeyEncryption;
 
 import javax.crypto.Cipher;
-import java.nio.charset.StandardCharsets;
 import java.security.PrivateKey;
 
+
 public class DecryptAlgorithm {
-    private Cipher cipher;
-    final String algorithm = "RSA/ECB/PKCS1Padding";
     private PrivateKey privatekey;
-    private byte[] input;
+    private Cipher cipher;
 
     //Construct
-    public DecryptAlgorithm(PrivateKey pPrivateKey, String ciphertext) throws Exception{
+    public DecryptAlgorithm(PrivateKey pPrivateKey, Cipher pCipher) throws Exception{
+
+        //retrieve private key
+        this.privatekey = pPrivateKey;
 
         //Creating a Cipher object
-        cipher = Cipher.getInstance(algorithm);
-
-        //retrieve public key
-        privatekey = pPrivateKey;
-
-        //get input message
-        input = ciphertext.getBytes();
-
-    }
-
-    //Dencrypt Data
-    public byte[] doDecryptedData() throws Exception{
+        this.cipher = pCipher;
 
         //Initializing a Cipher object
-        cipher.init(Cipher.DECRYPT_MODE,privatekey);
-        //dencrypting the data
-        byte[] plainText = cipher.doFinal(input);
-        String text = new String(plainText, StandardCharsets.UTF_8);
+        this.cipher.init(Cipher.DECRYPT_MODE,this.privatekey);
+
+
+    }
+
+    //Decrypt Data by bytes array
+    public byte[] doDecryptedDataByBytesArray(byte[] input) throws Exception{
+        //Add data to the cipher
+        cipher.update(input);
+
+        //encrypting the data
+        byte[] plainText = cipher.doFinal();
+        //System.out.println( new String(plainText, "UTF8"));
+        return plainText;
+
+    }
+
+    //Encrypt Data by string
+    public byte[] doDecryptedDataByString(String data) throws Exception{
+        //Add data to the cipher
+        byte[] input = data.getBytes();
+        cipher.update(input);
+
+        //encrypting the data
+        byte[] plainText = cipher.doFinal();
+        //System.out.println( new String(plainText, "UTF8"));
         return plainText;
     }
+
+
 }
