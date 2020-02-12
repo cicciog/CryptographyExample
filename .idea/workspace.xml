@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5110424d-8145-4f52-b85b-5c32bece4a63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MACtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MACtest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MacAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MacAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/VerifyAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/VerifyAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,7 +20,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MACtest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
+            <state relative-caret-position="17">
               <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
             </state>
           </provider>
@@ -47,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/VerifyAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,15 +175,16 @@
         <option value="$PROJECT_DIR$/src/main/java/AsymmetricKeyEncryption/EncryptAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/AsymmetricKeyEncryption/AsymmetricCryptography.java" />
         <option value="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MacAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/VerifyAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MACtest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/VerifyAlgorithm.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="475" />
+    <option name="y" value="11" />
     <option name="width" value="679" />
-    <option name="height" value="728" />
+    <option name="height" value="731" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -209,29 +208,6 @@
               <item name="CryptographyExample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptographyExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptographyExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptographyExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptographyExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AsymmetricKeyEncryption" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptographyExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptographyExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MessageAuthenticationCode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,7 +346,7 @@
       <workItem from="1581267116624" duration="641000" />
       <workItem from="1581323375493" duration="12271000" />
       <workItem from="1581357183248" duration="2092000" />
-      <workItem from="1581493499004" duration="8555000" />
+      <workItem from="1581493499004" duration="10472000" />
     </task>
     <task id="LOCAL-00001" summary="created maven project for cryptography examples">
       <created>1578490147452</created>
@@ -435,17 +411,23 @@
       <option name="project" value="LOCAL" />
       <updated>1581501918322</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="The MAC algorithm  was updated and the verification algorithm has been implemented">
+      <created>1581504084101</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581504084101</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41683000" />
+    <option name="totallyTimeSpent" value="43600000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="475" y="11" width="679" height="731" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17700455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37802908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -454,7 +436,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49848714" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5015129" weight="0.3371522" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5015129" visible="true" weight="0.34448162" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -464,7 +446,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.49848714" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.46293494" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.46293494" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -476,7 +458,7 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17700455" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17700455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -485,7 +467,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49848714" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5015129" weight="0.3371522" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5015129" visible="true" weight="0.3371522" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -495,7 +477,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.49848714" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.46293494" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.46293494" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -521,7 +503,8 @@
     <MESSAGE value="Added asymmetric key encryption scheme: decryption" />
     <MESSAGE value="Updated asymmetric key encryption scheme" />
     <MESSAGE value="Deleted publickey test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted publickey test class" />
+    <MESSAGE value="The MAC algorithm  was updated and the verification algorithm has been implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="The MAC algorithm  was updated and the verification algorithm has been implemented" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CryptographyExample.iml">
@@ -684,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/VerifyAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="408">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -694,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MessageAuthenticationCode/MACtest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
+        <state relative-caret-position="17">
           <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
         </state>
       </provider>
