@@ -10,7 +10,7 @@ Hash functions are extremely useful and appear in almost all information securit
 
 Symmetric key cryptography (or symmetric encryption) is a type of encryption scheme in which the same key is used both to encrypt and decrypt messages. Such a method of encoding information has been largely used in the past decades to facilitate secret communication between governments and militaries. Nowadays, symmetric key algorithms are widely applied in various types of computer systems to enhance data security. Symmetric encryption schemes rely on a single key that is shared between two or more users. The same key is used to encrypt and decrypt the so-called plaintext (which represents the message or piece of data that is being encoded). The process of encryption consists of running a plaintext (input) through an encryption algorithm called a cipher, which in turn generates a ciphertext (output). If the encryption scheme is strong enough, the only way for a person to read or access the information contained in the ciphertext is by using the corresponding key to decrypt it. The process of decryption is basically converting the ciphertext back to plaintext.
 
--> ![alt text](https://github.com/cicciog/CryptographyExample/blob/master/images/symmetric-encryption.gif "Private key encryption") <-
+-> ![alt text](https://github.com/cicciog/CryptographyExample/blob/master/images/symmetric-encryption.png "Private key encryption") <-
 
 ## Asymmetric key encryption or Public key encryption
 
