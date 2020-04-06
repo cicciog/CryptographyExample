@@ -12,7 +12,9 @@ Hash functions are extremely useful and appear in almost all information securit
 <p align="justify">
 Symmetric key cryptography (or symmetric encryption) is a type of encryption scheme in which the same key is used both to encrypt and decrypt messages. Such a method of encoding information has been largely used in the past decades to facilitate secret communication between governments and militaries. Nowadays, symmetric key algorithms are widely applied in various types of computer systems to enhance data security. Symmetric encryption schemes rely on a single key that is shared between two or more users. The same key is used to encrypt and decrypt the so-called plaintext (which represents the message or piece of data that is being encoded). The process of encryption consists of running a plaintext (input) through an encryption algorithm called a cipher, which in turn generates a ciphertext (output). If the encryption scheme is strong enough, the only way for a person to read or access the information contained in the ciphertext is by using the corresponding key to decrypt it. The process of decryption is basically converting the ciphertext back to plaintext.
 </p>
--> ![alt text](https://github.com/cicciog/CryptographyExample/blob/master/images/symmetric-encryption.png "Private key encryption") <-
+<p align="center">
+  <img src="https://github.com/cicciog/CryptographyExample/blob/master/images/symmetric-encryption.png" alt="Private key encryption" />
+</p>
 
 ## Asymmetric key encryption or Public key encryption
 <p align="justify">
@@ -25,10 +27,15 @@ The most important properties of public key encryption scheme are:
 5. Encryption algorithm is complex enough to prohibit attacker from deducing the plaintext from the ciphertext and the encryption (public) key.
 6. Though private and public keys are related mathematically, it is not be feasible to calculate the private key from the public key. In fact, intelligent part of any public-key cryptosystem is in designing a relationship between two keys.
 </p>
-![alt text](https://github.com/cicciog/CryptographyExample/blob/master/images/public-key-encryption.png "Public key encryption")
+<p align="center">
+  <img src="https://github.com/cicciog/CryptographyExample/blob/master/images/public-key-encryption.png " alt="Public key encryption" />
+</p>
 
 ## Message Authentication Codes
 <p align="justify">
 MAC algorithm is a symmetric key cryptographic technique to provide message authentication. For establishing MAC process, the sender and receiver share a symmetric key K. Essentially, a MAC is an encrypted checksum generated on the underlying message that is sent along with a message to ensure message authentication. The sender uses some publicly known MAC algorithm, inputs the message and the secret key K and produces a MAC value. Similar to hash, MAC function also compresses an arbitrary long input into a fixed length output. The major difference between hash and MAC is that MAC uses secret key during the compression. The sender forwards the message along with the MAC. Here, we assume that the message is sent in the clear, as we are concerned of providing message origin authentication, not confidentiality. If confidentiality is required then the message needs encryption. On receipt of the message and the MAC, the receiver feeds the received message and the shared secret key K into the MAC algorithm and re-computes the MAC value. The receiver now checks equality of freshly computed MAC with the MAC received from the sender. If they match, then the receiver accepts the message and assures himself that the message has been sent by the intended sender. If the computed MAC does not match the MAC sent by the sender, the receiver cannot determine whether it is the message that has been altered or it is the origin that has been falsified.
 </p>
-![alt text](https://github.com/cicciog/CryptographyExample/blob/master/images/mac.png "MAC")
+<p align="center">
+  <img src="https://github.com/cicciog/CryptographyExample/blob/master/images/mac.png" alt="MAC" />
+</p>
+
